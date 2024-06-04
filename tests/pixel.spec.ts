@@ -1,6 +1,4 @@
-import { test, expect, devices } from "@playwright/test";
-
-test.use(devices["Pixel 5"]);
+import { test, expect } from "@playwright/test";
 
 test("pixel orientation is portait-primary", async ({ page }) => {
   await page.goto("https://playwright.dev/");
